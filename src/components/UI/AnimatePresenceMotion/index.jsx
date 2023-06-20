@@ -1,9 +1,11 @@
 "use client";
 import { AnimatePresence } from "framer-motion";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 const AnimatePresenceMotion = ({ children }) => {
-  return <AnimatePresence mode="wait">{children}</AnimatePresence>;
+  const pathname = usePathname();
+  return <AnimatePresence>{children}</AnimatePresence>;
 };
 
 export default AnimatePresenceMotion;

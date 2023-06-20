@@ -10,4 +10,14 @@
 body {
   font-size: 16px;
   overflow: hidden;
+  max-height: 100vh;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
 }
