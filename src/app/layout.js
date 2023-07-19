@@ -1,12 +1,12 @@
 import AnimatePresenceMotion from "@/components/UI/AnimatePresenceMotion";
 import "./globals.css";
-import { Oswald } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import NavBar from "@/components/UI/NavBar";
 
-const fontUsed = Oswald({ subsets: ["latin"] });
+const fontUsed = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sagar Vaish",
+  title: "websitesbysagar - Sagar Vaish",
   description: "This is Sagar's portfolio website.",
 };
 

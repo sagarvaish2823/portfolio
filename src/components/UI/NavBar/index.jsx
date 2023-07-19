@@ -21,8 +21,9 @@ const NavBar = () => {
   ];
   return (
     <Fragment>
-      <nav className="flex justify-end items-center gap-4 my-2 mx-8">
-        <div className="flex gap-4 text-2xl">
+      {/* <nav className="flex justify-end items-center gap-4 my-2 mx-8"> */}
+      <nav className="relative">
+        {/* <div className="flex gap-4 text-2xl">
           {links.map((item) => (
             <Link
               className="hover:scale-105 hover:-translate-y-2 transition-all"
@@ -37,6 +38,14 @@ const NavBar = () => {
           <button className="text-xl py-2 px-6 border border-black rounded-full transition-all hover:bg-black hover:text-white">
             <p>Let&apos;s Talk &gt;</p>
           </button>
+        </div> */}
+        <div className="mt-8 mx-8">
+          <h1 className="text-2xl font-bold">
+            Sagar Vaish<span className="text-yellow-400">.</span>
+          </h1>
+          {/* <p className="">
+            websitesbysagar<span className="text-2xl text-yellow-400">.</span>
+          </p> */}
         </div>
       </nav>
     </Fragment>
