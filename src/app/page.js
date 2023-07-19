@@ -2,6 +2,7 @@
 // import TypeWriterTitle from "@/components/UI/TypeWriterTitle";
 import AuditInput from "@/components/Funtional/AuditInput";
 import React, { Fragment } from "react";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -28,32 +29,12 @@ export default function Home() {
             <p className="font-light mt-4 ml-16 text-yellow-400">
               SUBMIT YOUR WEBSITE
             </p>
+            <div className="mt-16 flex justify-center items-center gap-8">
+              <FaInstagram className="text-5xl hover:text-yellow-400 hover:scale-105 active:scale-95 transition-all cursor-pointer" />
+              <FaLinkedin className="text-5xl hover:text-yellow-400 hover:scale-105 active:scale-95 transition-all cursor-pointer" />
+            </div>
           </div>
           <div className="mt-20 w-[95%] inline-flex ml-8">
-            {/* <p className="text-5xl font-semibold leading-[5rem]">
-              My Name is{" "}
-              <span>
-                <input
-                  placeholder="Name"
-                  className="w-[20rem] text-white bg-transparent border-b text-2xl focus-visible:bg-gray-800 focus:outline-none p-4"
-                />
-              </span>{" "}
-              and I want{" "}
-              <span>
-                <input
-                  placeholder="Website"
-                  className="w-[20rem] text-white bg-transparent border-b text-2xl focus-visible:bg-gray-800 focus:outline-none p-4"
-                />
-              </span>{" "}
-              to be audited. You can reach me at{" "}
-              <span>
-                <input
-                  placeholder="Email"
-                  className="w-[20rem] text-white bg-transparent border-b text-2xl focus-visible:bg-gray-800 focus:outline-none p-4"
-                />
-              </span>{" "}
-              to send report.
-            </p> */}
             <AuditInput />
           </div>
         </section>
