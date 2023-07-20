@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .input_form {
+    @apply w-[10rem] border-b bg-transparent p-2 text-lg text-yellow-400 placeholder-gray-300 focus:outline-none md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -9,8 +15,7 @@
 }
 body {
   font-size: 16px;
-  overflow: hidden;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   /* background-color: #2f3e46; */
   /* background-color: #2a9d8f; */
   /* color: white; */
@@ -29,4 +34,10 @@ li {
 
 img {
   width: 100%;
+}
+@media only screen and (min-width: 1366px) {
+  body {
+    max-height: 100vh;
+    /* overflow-x: hidden; */
+  }
 }

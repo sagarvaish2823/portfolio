@@ -39,8 +39,8 @@ const NavBar = () => {
             <p>Let&apos;s Talk &gt;</p>
           </button>
         </div> */}
-        <div className="mt-8 mx-8">
-          <h1 className="text-2xl font-bold">
+        <div className="mx-8 mt-8 md-768:mt-16 lg-1366:mt-8">
+          <h1 className="text-2xl font-bold md-768:text-4xl">
             Sagar Vaish<span className="text-yellow-400">.</span>
           </h1>
           {/* <p className="">

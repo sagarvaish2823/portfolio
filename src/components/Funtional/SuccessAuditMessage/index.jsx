@@ -3,13 +3,13 @@ import React from "react";
 
 const SuccessAuditMessage = (props) => {
   return (
-    <div className="absolute top-0 left-0 h-screen w-screen backdrop-blur-sm">
-      <div className="flex flex-col justify-center items-center mt-[7%] bg-white mx-20 h-[70%] rounded-lg shadow-2xl">
+    <div className="absolute left-0 top-0 h-screen w-screen backdrop-blur-sm">
+      <div className="flex h-[120%] flex-col items-center justify-center rounded-lg bg-white shadow-2xl lg-1366:mx-20 lg-1366:mt-[7%] lg-1366:h-[70%]">
         <p className="text-black">Thanks</p>
         <button
           type="button"
           onClick={props.onClickAgain}
-          className="my-4 py-4 px-8 rounded-2xl font-bold bg-yellow-400 text-black hover:scale-105 active:scale-95 transition-transform"
+          className="my-4 rounded-2xl bg-yellow-400 px-8 py-4 font-bold text-black transition-transform hover:scale-105 active:scale-95"
         >
           Audit another website
         </button>
