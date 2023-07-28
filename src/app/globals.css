@@ -4,7 +4,10 @@
 
 @layer utilities {
   .input_form {
-    @apply w-[10rem] border-b bg-transparent p-2 text-lg text-yellow-400 placeholder-gray-300 focus:outline-none md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl;
+    @apply w-[10rem] border-b bg-transparent p-2 text-lg text-yellow-400 placeholder-gray-300 focus:outline-none focus-visible:bg-yellow-100 md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl;
+  }
+  .button_main {
+    @apply rounded-full border-2 border-black px-6 py-2 text-xl transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold;
   }
 }
 
@@ -15,16 +18,8 @@
 }
 body {
   font-size: 16px;
-  /* max-height: 100vh; */
-  /* background-color: #2f3e46; */
-  /* background-color: #2a9d8f; */
-  /* color: white; */
   color: black;
-  /* background-image: radial-gradient(
-    at center center,
-    rgb(249, 115, 22),
-    rgb(253, 224, 71)
-  ); */
+  overflow-x: hidden;
 }
 
 li {
@@ -34,10 +29,4 @@ li {
 
 img {
   width: 100%;
-}
-@media only screen and (min-width: 1366px) {
-  body {
-    max-height: 100vh;
-    /* overflow-x: hidden; */
-  }
 }

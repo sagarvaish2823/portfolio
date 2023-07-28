@@ -10,7 +10,7 @@ export const metadata = {
   description: "This is Sagar's portfolio website.",
 };
 
-export default function RootLayout({ children, pathname }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AnimatePresenceMotion>
