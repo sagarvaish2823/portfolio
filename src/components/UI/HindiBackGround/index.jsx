@@ -2,9 +2,9 @@ import React from "react";
 
 const HindiBackGround = () => {
   return (
-    <p className="pointer-events-none text-[15rem] font-bold text-center absolute bottom-10 text-[#f2f2f2] right-0">
-      सागर
-      {/* सागर वैश */}
+    <p className="pointer-events-none absolute pt-16 text-center text-[7rem] font-bold text-gray-400 opacity-50 dark:text-[#f2f2f2] dark:opacity-10">
+      {/* सागर */}
+      सागर वैश
     </p>
   );
 };

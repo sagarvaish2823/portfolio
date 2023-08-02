@@ -28,6 +28,16 @@ module.exports = {
         "xl-1920": "1920px",
         "xl-2560": "2560px",
       },
+      keyframes: {
+        rotate_item: {
+          "0%": { transform: "rotate(0deg)" },
+          "50%": { transform: "scale(1 1.5)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        rotate_item: "rotate_item 20s infinite",
+      },
     },
   },
   plugins: [],

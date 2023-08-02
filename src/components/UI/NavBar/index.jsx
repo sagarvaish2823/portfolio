@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import NavbarLogo from "./NavbarLogo";
+import DarkModeToggle from "../DarkModeToggle";
+import Link from "next/link";
 
 const NavBar = () => {
   const links = [
@@ -21,8 +23,11 @@ const NavBar = () => {
   ];
   return (
     <Fragment>
-      <nav className="mx-8 my-2 pt-2">
+      <nav className="flex items-center justify-between px-8 py-2 pt-2">
         <NavbarLogo />
+        <div>
+          <DarkModeToggle />
+        </div>
       </nav>
     </Fragment>
   );

@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .input_form {
-    @apply w-[10rem] border-b bg-transparent p-2 text-lg text-yellow-400 placeholder-gray-300 focus:outline-none focus-visible:bg-yellow-100 md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl;
-  }
-  .button_main {
-    @apply rounded-full border-2 border-black px-6 py-2 text-xl transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold;
-  }
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -18,7 +9,6 @@
 }
 body {
   font-size: 16px;
-  color: black;
   overflow-x: hidden;
 }
 
@@ -29,4 +19,35 @@ li {
 
 img {
   width: 100%;
+}
+.dark {
+  background-color: black !important;
+  color: white;
+}
+.light {
+  background-color: white !important;
+  color: black;
+}
+.theme {
+  transition: 1s all ease;
+}
+.tooltip {
+  position: absolute;
+  top: calc(-100% -50px);
+  translate: -45% -200%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 1rem;
+  z-index: 20;
+  min-width: 20rem;
+}
+
+@layer utilities {
+  .input_form {
+    @apply w-[10rem] border-b bg-transparent p-2 text-lg text-yellow-400 placeholder-gray-300 focus:outline-none focus-visible:bg-yellow-100 md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl;
+  }
+  .button_main {
+    @apply rounded-full border-2 border-black px-6 py-2 text-center text-xl transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold dark:border-white dark:hover:text-black;
+  }
 }

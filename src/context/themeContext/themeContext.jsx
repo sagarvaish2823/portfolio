@@ -1,5 +1,4 @@
 "use client";
-
 import { createContext, useState } from "react";
 
 export const ThemeContext = createContext();
@@ -10,7 +9,9 @@ export const ThemeProvider = ({ children }) => {
   const toggle = () => {
     setMode((prev) => (prev === "dark" ? "light" : "dark"));
   };
-  <ThemeContext.Provider value={{ toggle, mode }}>
-    {children}
-  </ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={{ toggle, mode }}>
+      <div className={`theme ${mode} absolute z-20 w-full`}>{children}</div>
+    </ThemeContext.Provider>
+  );
 };

@@ -1,9 +1,14 @@
 import AnimatePresenceMotion from "@/components/UI/AnimatePresenceMotion";
 import "./globals.css";
-import { Montserrat } from "next/font/google";
+import { Roboto } from "next/font/google";
 import NavBar from "@/components/UI/NavBar";
+import { ThemeProvider } from "@/context/themeContext/themeContext";
+import MouseComponent from "@/components/MouseComponent";
 
-const fontUsed = Montserrat({ subsets: ["latin"] });
+const fontUsed = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "websitesbysagar - Sagar Vaish",
@@ -17,10 +22,14 @@ export default function RootLayout({ children }) {
         <body
           style={{ WebkitTapHighlightColor: "transparent" }}
           className={fontUsed.className}
-          // key={pathname}
         >
-          <NavBar />
-          {children}
+          <ThemeProvider>
+            <MouseComponent />
+            <div className="relative w-full">
+              <NavBar />
+              {children}
+            </div>
+          </ThemeProvider>
         </body>
       </AnimatePresenceMotion>
     </html>
