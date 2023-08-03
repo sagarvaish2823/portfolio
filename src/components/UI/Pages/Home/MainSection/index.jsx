@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import { BsMouse } from "react-icons/bs";
-import { MdSwipeDown } from "react-icons/md";
+import { MdSwipeUp } from "react-icons/md";
 import ToolTip from "@/components/UI/ToolTip";
 import { motion as m } from "framer-motion";
 import { ThemeContext } from "@/context/themeContext/themeContext";
@@ -30,7 +30,7 @@ const MainSection = () => {
       <m.section className="flex flex-col items-center justify-center">
         <ToolTip text={"Mujhe Pata the Piddi tum ispe hover kroge"}>
           <BsMouse className="hidden text-4xl lg-1024:block" />
-          <MdSwipeDown className="text-4xl lg-1024:hidden" />
+          <MdSwipeUp className="text-4xl lg-1024:hidden" />
         </ToolTip>
       </m.section>
     </m.main>
