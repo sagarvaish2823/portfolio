@@ -40,7 +40,7 @@ const MouseComponent = () => {
         animate="default"
         className="fixed left-0 top-0 z-0 blur-[100px] dark:blur-[200px]"
       >
-        <div className="aspect-square h-[300px] animate-rotate_item rounded-full bg-gradient-to-r from-green-300 to-purple-500"></div>
+        <div className="aspect-square h-[300px] animate-rotate_item rounded-full bg-gradient-to-r from-blue-300 to-green-500 dark:from-green-300 dark:to-purple-500"></div>
       </m.div>
     </Fragment>
   );

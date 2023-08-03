@@ -48,6 +48,6 @@ img {
     @apply w-[10rem] border-b bg-transparent p-2 text-lg text-yellow-400 placeholder-gray-300 focus:outline-none focus-visible:bg-yellow-100 md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl;
   }
   .button_main {
-    @apply rounded-full border-2 border-black px-6 py-2 text-center text-xl transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold dark:border-white dark:hover:text-black;
+    @apply rounded-full border-2 border-black px-6 py-2 text-center text-base transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold dark:border-white dark:hover:text-black lg-1024:text-xl;
   }
 }

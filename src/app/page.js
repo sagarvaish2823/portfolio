@@ -16,7 +16,7 @@ export default function Home() {
   } else
     return (
       <Fragment>
-        <section className="mx-8 mb-16">
+        <section className="mb-16">
           <MainSection />
           <AboutSection />
         </section>

@@ -1,22 +1,49 @@
 import React, { Fragment } from "react";
 import HindiBackGround from "@/components/UI/HindiBackGround";
+import myImg from "../../../../../public/images/sagar.webp";
+import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
 
 const AboutSection = () => {
   return (
     <Fragment>
-      <section className="flex items-start justify-center">
-        <q className="text-2xl font-bold">
-          I help design simpler user experiences.
-        </q>
-      </section>
-      <section className="flex h-[30vh] items-start justify-center">
-        <HindiBackGround />
-      </section>
-      <section className="mx-20 mt-20">
-        <h2 className="text-6xl font-bold">
-          About <span className="text-yellow-400">me</span>
-        </h2>
-      </section>
+      <div className="mx-4 lg-1024:mx-[4rem]">
+        <div className="grid-cols-3 place-items-center justify-items-center lg-1024:grid">
+          <div>
+            <p className="text-center text-2xl text-black drop-shadow dark:text-gray-500 lg-1024:text-left lg-1024:text-4xl">
+              Hi, I&apos;m <br />
+              <span className="text-yellow-400 dark:text-white">
+                Sagar Vaish
+              </span>
+              .
+              <br />I help startups design simpler user experiences{" "}
+            </p>
+          </div>
+          <div className="relative mb-16 h-[20rem] w-[20rem] lg-1024:mb-0">
+            <Image src={myImg} alt="my-pic" fill className="object-contain" />
+          </div>
+          <div>
+            <p className="text-center text-2xl text-black drop-shadow dark:text-gray-500 lg-1024:text-left lg-1024:text-4xl">
+              I simplify & re-design{" "}
+              <span className="text-yellow-400 dark:text-white">websites</span>{" "}
+              for smooth user experience
+              <br />
+              Based in{" "}
+              <span className="text-yellow-400 dark:text-white">
+                <Typewriter
+                  words={["भारत", "India"]}
+                  loop={0}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 };
