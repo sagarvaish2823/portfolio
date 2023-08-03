@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         >
           <ThemeProvider>
             <MouseComponent />
-            <div className="relative w-full">
+            <div className="relative">
               <NavBar />
               {children}
             </div>

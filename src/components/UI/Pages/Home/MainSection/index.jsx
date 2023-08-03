@@ -12,9 +12,9 @@ const MainSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="h-screen w-screen overflow-x-hidden px-4 lg-1024:px-8"
+      className="h-screen lg-1024:px-8"
     >
-      <section className="grid h-[83.6vh] grid-rows-2 gap-8">
+      <section className="grid h-[73.6vh] grid-rows-2 gap-8 lg-1024:h-[83.6vh]">
         <h2 className="flex items-end justify-center text-4xl text-black drop-shadow-md dark:text-white lg-1024:text-5xl">
           webistesbysagar
         </h2>
