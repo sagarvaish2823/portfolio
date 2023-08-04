@@ -15,7 +15,7 @@ const MainSection = () => {
       className="h-screen lg-1024:px-8"
     >
       <section className="grid h-[73.6vh] grid-rows-2 gap-8 lg-1024:h-[83.6vh]">
-        <h2 className="flex items-end justify-center text-4xl text-black drop-shadow-md dark:text-white lg-1024:text-5xl">
+        <h2 className="flex items-end justify-center text-4xl text-black drop-shadow-md dark:text-white md-768:text-6xl lg-1024:text-5xl">
           webistesbysagar
         </h2>
         <div className="flex items-start justify-center gap-8">
@@ -28,7 +28,7 @@ const MainSection = () => {
         </div>
       </section>
       <m.section className="flex flex-col items-center justify-center">
-        <ToolTip text={"Mujhe Pata the Piddi tum ispe hover kroge"}>
+        <ToolTip text={"Mujhe Pata tha Piddi tum ispe hover kroge"}>
           <BsMouse className="hidden text-4xl lg-1024:block" />
           <MdSwipeUp className="text-4xl lg-1024:hidden" />
         </ToolTip>

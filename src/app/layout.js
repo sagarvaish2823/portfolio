@@ -7,6 +7,8 @@ import MouseComponent from "@/components/MouseComponent";
 
 const fontUsed = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
+  // weight: ["300", "400", "500", "600", "700"], Quicksand
+  // weight: ["400"], Gloock
   subsets: ["latin"],
 });
 

@@ -1,8 +1,9 @@
 "use client";
 import React, { Fragment, useEffect, useState } from "react";
-import AboutSection from "@/components/UI/Pages/Home/AboutSection";
-import MainSection from "@/components/UI/Pages/Home/MainSection";
-import Preloader from "@/components/UI/Pages/PreLoader";
+import Preloader from "@/components/Pages/PreLoader";
+import MainSection from "@/components/Pages/Home/FirstSection";
+import AboutSection from "@/components/Pages/Home/SecondSection";
+import ServicesSection from "@/components/Pages/Home/ThirdSection";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +20,7 @@ export default function Home() {
         <section className="mb-16">
           <MainSection />
           <AboutSection />
+          <ServicesSection />
         </section>
       </Fragment>
     );
