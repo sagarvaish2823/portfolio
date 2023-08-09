@@ -4,6 +4,7 @@ import Preloader from "@/components/Pages/PreLoader";
 import MainSection from "@/components/Pages/Home/FirstSection";
 import AboutSection from "@/components/Pages/Home/SecondSection";
 import ServicesSection from "@/components/Pages/Home/ThirdSection";
+import WorkFlow from "@/components/Pages/Home/FourthSection";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,7 @@ export default function Home() {
           <MainSection />
           <AboutSection />
           <ServicesSection />
+          <WorkFlow />
         </section>
       </Fragment>
     );

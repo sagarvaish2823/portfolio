@@ -22,7 +22,7 @@ const MainSection = () => {
           {/* <Link href={"/"} className="button_main">
         Let&apos;s Make Your Website
       </Link> */}
-          <Link href={"/auditPage"} className="button_main hover:shadow-md">
+          <Link href={"/audit-page"} className="button_main hover:shadow-md">
             Your Free Website Audit
           </Link>
         </div>

@@ -18,7 +18,7 @@ const ServicesSection = () => {
           <div
             className={`${
               flip1
-                ? "animate-gradient-xy bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
+                ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-blue-700 dark:via-blue-800 dark:to-gray-900"
                 : ""
             } relative w-full rounded-2xl bg-[#f7f7f7] p-8 shadow dark:bg-[#161617]`}
           >
@@ -49,7 +49,7 @@ const ServicesSection = () => {
           <div
             className={`${
               flip2
-                ? "animate-gradient-xy bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
+                ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-blue-700 dark:via-blue-800 dark:to-gray-900"
                 : ""
             } relative mt-8 w-full rounded-2xl bg-[#f7f7f7] p-8 shadow dark:bg-[#161617] md-768:mt-0`}
           >
