@@ -1,25 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-body {
-  font-size: 16px;
-  overflow-x: hidden;
-}
-
-li {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-img {
-  width: 100%;
-}
 .dark {
   background-color: black !important;
   color: white;
@@ -30,6 +11,28 @@ img {
 }
 .theme {
   transition: 1s all ease;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
 }
 .tooltip {
   position: absolute;
@@ -49,5 +52,8 @@ img {
   }
   .button_main {
     @apply rounded-full border-2 border-black px-6 py-2 text-center text-base transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold dark:border-white dark:hover:text-black md-768:text-xl;
+  }
+  .card {
+    @apply relative flex aspect-square h-[18rem] w-[18rem] flex-col justify-between rounded-2xl bg-white px-10 pb-16 pt-16 font-bold text-black lg-1024:h-[19rem] lg-1024:w-[19rem];
   }
 }

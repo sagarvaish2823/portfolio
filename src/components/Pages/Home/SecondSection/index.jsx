@@ -7,7 +7,7 @@ import { Typewriter } from "react-simple-typewriter";
 const AboutSection = () => {
   return (
     <Fragment>
-      <div className="px-4 lg-1024:px-[3rem]">
+      <div className="mx-4 lg-1024:mx-[3rem]">
         <div className="grid-cols-3 place-items-center justify-items-center lg-1024:grid">
           <div>
             <p className="text-center text-2xl text-black drop-shadow dark:text-gray-500 lg-1024:text-left lg-1024:text-3xl lg-1024:tracking-tight">

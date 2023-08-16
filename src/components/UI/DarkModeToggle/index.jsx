@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
 
   const { toggle, mode } = useContext(ThemeContext);
   return (
-    <div className="flex cursor-pointer gap-4">
+    <div className="cursor-pointer">
       <button onClick={toggle}>{mode === "dark" ? Sun : Moon}</button>
     </div>
   );

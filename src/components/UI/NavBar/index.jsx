@@ -23,7 +23,7 @@ const NavBar = () => {
   ];
   return (
     <Fragment>
-      <nav className="flex items-center justify-between px-8 py-2">
+      <nav className="flex items-center justify-between">
         <NavbarLogo />
         <div>
           <DarkModeToggle />

@@ -8,7 +8,7 @@ const ServicesSection = () => {
 
   return (
     <Fragment>
-      <section className="px-8 pt-8 lg-1024:pt-16">
+      <section className="mx-8 pt-8 lg-1024:mt-16">
         <div>
           <h2 className="text-4xl font-bold tracking-tight lg-1024:pl-16 lg-1024:text-5xl">
             I can <br /> help you in...
@@ -18,7 +18,7 @@ const ServicesSection = () => {
           <div
             className={`${
               flip1
-                ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-blue-700 dark:via-blue-800 dark:to-gray-900"
+                ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-fuchsia-700 dark:to-sky-800"
                 : ""
             } relative w-full rounded-2xl bg-[#f7f7f7] p-8 shadow dark:bg-[#161617]`}
           >
@@ -49,7 +49,7 @@ const ServicesSection = () => {
           <div
             className={`${
               flip2
-                ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-blue-700 dark:via-blue-800 dark:to-gray-900"
+                ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-fuchsia-700 dark:to-sky-800"
                 : ""
             } relative mt-8 w-full rounded-2xl bg-[#f7f7f7] p-8 shadow dark:bg-[#161617] md-768:mt-0`}
           >
