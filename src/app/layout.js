@@ -21,21 +21,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <AnimatePresenceMotion> */}
-      <body
-        // style={{ WebkitTapHighlightColor: "transparent" }}
-        className={fontUsed.className}
-      >
-        <ThemeProvider>
-          {/* <MetaDataCustom /> */}
-          {/* <MouseComponent /> */}
-          {/* <div className="relative"> */}
-          {/* <NavBar /> */}
-          {children}
-          {/* </div> */}
-        </ThemeProvider>
-      </body>
-      {/* </AnimatePresenceMotion> */}
+      <AnimatePresenceMotion>
+        <body
+          style={{ WebkitTapHighlightColor: "transparent" }}
+          className={fontUsed.className}
+        >
+          <ThemeProvider>
+            <MetaDataCustom />
+            <MouseComponent />
+            <div className="relative">
+              <NavBar />
+              {children}
+            </div>
+          </ThemeProvider>
+        </body>
+      </AnimatePresenceMotion>
     </html>
   );
 }

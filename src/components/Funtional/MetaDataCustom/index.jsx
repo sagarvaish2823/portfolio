@@ -13,4 +13,4 @@ const MetaDataCustom = () => {
   );
 };
 
-export default MetaDataCustom();
+export default MetaDataCustom;
