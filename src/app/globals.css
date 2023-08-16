@@ -54,6 +54,6 @@ img {
     @apply rounded-full border-2 border-black px-6 py-2 text-center text-base transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold dark:border-white dark:hover:text-black md-768:text-xl;
   }
   .card {
-    @apply relative flex aspect-square h-[18rem] w-[18rem] flex-col justify-between rounded-2xl bg-white px-10 pb-16 pt-16 font-bold text-black lg-1024:h-[19rem] lg-1024:w-[19rem];
+    @apply relative flex aspect-square h-[18rem] w-[18rem] flex-col justify-between rounded-2xl bg-[#f3f3f3] px-10 pb-16 pt-16 font-bold text-black shadow dark:bg-white dark:text-black lg-1024:h-[19rem] lg-1024:w-[19rem];
   }
 }

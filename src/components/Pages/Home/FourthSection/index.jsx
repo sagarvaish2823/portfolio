@@ -65,35 +65,29 @@ const WorkFlow = () => {
     },
   ];
 
-  // const targetRefPc = useRef(null);
-  // const targetRefMobile = useRef(null);
   const targetRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  // const { scrollYProgress } = useScroll({
-  //   target: targetRefMobile,
-  // });
-  const workflowScrollPc = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["65%", "-0%"]
-  );
+
+  const workflowScrollPc = useTransform(scrollYProgress, [0, 1], ["65%", "3%"]);
   const workflowScrollMobile = useTransform(
     scrollYProgress,
     [0, 1],
-    ["65%", "-290%"]
+    ["65%", "-230%"]
   );
 
   return (
     <Fragment>
-      <section ref={targetRef} className="relative mx-8 h-[300vh]">
+      <section ref={targetRef} className="relative h-[300vh]">
         <div className="sticky top-0 overflow-hidden">
           <div>
-            <div className="pt-8 lg-1024:pt-16">
+            <div className="mx-8 pt-16">
               <p className="text-right text-4xl font-bold tracking-tight lg-1024:text-5xl">
-                Your Website will be ready in <br /> 4 easy steps...
+                Your Website
+                <br className="md-768:hidden" /> will be ready in <br /> 4 easy
+                steps...
               </p>
             </div>
             <m.div
@@ -104,7 +98,7 @@ const WorkFlow = () => {
                 <div key={text.id} className="card">
                   <div className="flex items-end justify-between">
                     {text.title}
-                    <p className="absolute -top-20 right-5 text-[7rem] text-gray-400">
+                    <p className="absolute -top-20 right-5 text-[7rem] text-black dark:text-gray-400">
                       {text.id}
                     </p>
                   </div>
@@ -120,7 +114,7 @@ const WorkFlow = () => {
                 <div key={text.id} className="card">
                   <div className="flex items-end justify-between">
                     {text.title}
-                    <p className="absolute -top-20 right-5 text-[7rem] text-gray-400">
+                    <p className="absolute -top-20 right-5 text-[7rem] text-black dark:text-gray-400">
                       {text.id}
                     </p>
                   </div>
