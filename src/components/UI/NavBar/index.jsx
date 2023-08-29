@@ -23,7 +23,7 @@ const NavBar = () => {
   ];
   return (
     <Fragment>
-      <nav className="mx-8 flex items-center justify-between py-2">
+      <nav className="mx-8 flex items-center justify-between py-2 pt-4 md-768:pt-0">
         <NavbarLogo />
         <div>
           <DarkModeToggle />

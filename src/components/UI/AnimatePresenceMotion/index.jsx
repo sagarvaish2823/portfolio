@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const AnimatePresenceMotion = ({ children }) => {
   const pathname = usePathname();
-  return <AnimatePresence mode="wait">{children}</AnimatePresence>;
+  return <AnimatePresence>{children}</AnimatePresence>;
 };
 
 export default AnimatePresenceMotion;

@@ -8,7 +8,7 @@ const Preloader = () => {
     <m.div
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex h-screen w-screen animate-pulse items-center justify-center text-5xl font-bold"
+      className="flex h-[91vh] w-screen animate-pulse grid-rows-2 items-center justify-center gap-8 text-5xl font-bold lg-1024:h-[91.5vh]"
     >
       नमस्ते
     </m.div>

@@ -1,13 +1,15 @@
 "use client";
-import React, { Fragment, useState } from "react";
+import { MotionConfig, motion as m } from "framer-motion";
+import React, { useState } from "react";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
+import ResizablePanel from "@/components/Funtional/ResizablePanel";
 
 const ServicesSection = () => {
   const [flip1, setFlip1] = useState(false);
   const [flip2, setFlip2] = useState(false);
 
   return (
-    <Fragment>
+    <MotionConfig transition={{ duration: 0.5 }}>
       <section className="mx-8 pt-8 lg-1024:mt-16">
         <div>
           <h2 className="text-4xl font-bold tracking-tight lg-1024:pl-16 lg-1024:text-5xl">
@@ -20,7 +22,7 @@ const ServicesSection = () => {
               flip1
                 ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-fuchsia-700 dark:to-sky-800"
                 : ""
-            } relative w-full rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617]`}
+            } relative w-full  rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617] `}
           >
             {!flip1 ? (
               <div className="flex h-full items-center justify-center">
@@ -51,7 +53,7 @@ const ServicesSection = () => {
               flip2
                 ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-fuchsia-700 dark:to-sky-800"
                 : ""
-            } relative mt-8 w-full rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617] md-768:mt-0`}
+            } relative mt-8 w-full  rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617] md-768:mt-0`}
           >
             {!flip2 ? (
               <div className="flex h-full items-center justify-center">
@@ -70,7 +72,6 @@ const ServicesSection = () => {
                 </p>
               </div>
             )}
-
             <button
               onClick={() => setFlip2(!flip2)}
               className="absolute bottom-4 right-4 z-20 text-5xl transition-transform hover:scale-90"
@@ -80,7 +81,7 @@ const ServicesSection = () => {
           </div>
         </div>
       </section>
-    </Fragment>
+    </MotionConfig>
   );
 };
 
