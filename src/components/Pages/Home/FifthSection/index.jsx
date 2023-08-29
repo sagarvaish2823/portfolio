@@ -53,7 +53,7 @@ const ProjectWork = () => {
                   <p className="lg-1024:text-lg">{i.para}</p>
                 </div>
                 <div className="flex items-center justify-center pt-8 lg-1024:pt-16">
-                  <div>
+                  <div className="lg-1024:w-[40rem]">
                     <Image
                       src={i.img}
                       alt={i.alt}
