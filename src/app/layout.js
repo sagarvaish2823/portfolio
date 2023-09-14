@@ -1,10 +1,12 @@
-import AnimatePresenceMotion from "@/components/UI/AnimatePresenceMotion";
+import AnimatePresenceMotion from "@/components/Providers/AnimatePresenceMotion/AnimatePresenceMotion";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import NavBar from "@/components/UI/NavBar";
 import { ThemeProvider } from "@/context/themeContext/themeContext";
-import MouseComponent from "@/components/MouseComponent";
+import MouseComponent from "@/components/UI/MouseComponent";
 import MetaDataCustom from "@/components/Funtional/MetaDataCustom";
+import Footer from "@/components/UI/Footer";
+import { Providers } from "../components/Providers/Providers";
 
 const fontUsed = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -21,21 +23,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <AnimatePresenceMotion> */}
-      <body
-        style={{ WebkitTapHighlightColor: "transparent" }}
-        className={fontUsed.className}
-      >
-        <ThemeProvider>
-          <MetaDataCustom />
-          <MouseComponent />
-          <div className="relative">
-            <NavBar />
-            {children}
-          </div>
-        </ThemeProvider>
-      </body>
-      {/* </AnimatePresenceMotion> */}
+      <AnimatePresenceMotion>
+        <body
+          style={{ WebkitTapHighlightColor: "transparent" }}
+          className={fontUsed.className}
+        >
+          <Providers>
+            <ThemeProvider>
+              <MetaDataCustom />
+              <MouseComponent />
+              <div className="relative">
+                <NavBar />
+                {children}
+                <Footer />
+              </div>
+            </ThemeProvider>
+          </Providers>
+        </body>
+      </AnimatePresenceMotion>
     </html>
   );
 }

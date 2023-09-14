@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import Link from "next/link";
 import { BsMouse } from "react-icons/bs";
 import { MdSwipeUp } from "react-icons/md";
 import ToolTip from "@/components/UI/ToolTip";
 import { motion as m } from "framer-motion";
-import { ThemeContext } from "@/context/themeContext/themeContext";
 
 const MainSection = () => {
   return (
@@ -14,14 +13,14 @@ const MainSection = () => {
       transition={{ duration: 1 }}
       className="h-screen lg-1024:mx-8"
     >
-      <section className="grid h-[73.6vh] grid-rows-2 gap-8 lg-1024:h-[83.6vh]">
+      <section className="grid h-[73.6vh] grid-rows-2 gap-8 lg-1024:h-[82.6vh]">
         <h2 className="flex items-end justify-center text-4xl text-black drop-shadow-md dark:text-white md-768:text-6xl lg-1024:text-5xl">
           webistesbysagar
         </h2>
         <div className="flex items-start justify-center gap-8">
-          {/* <Link href={"/"} className="button_main">
-        Let&apos;s Make Your Website
-      </Link> */}
+          <Link href={"/"} className="button_main hover:shadow-md">
+            Let&apos;s Make Your Website
+          </Link>
           <Link href={"/audit-page"} className="button_main hover:shadow-md">
             Your Free Website Audit
           </Link>

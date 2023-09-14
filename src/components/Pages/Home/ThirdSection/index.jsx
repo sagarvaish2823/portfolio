@@ -2,7 +2,6 @@
 import { MotionConfig, motion as m } from "framer-motion";
 import React, { useState } from "react";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
-import ResizablePanel from "@/components/Funtional/ResizablePanel";
 
 const ServicesSection = () => {
   const [flip1, setFlip1] = useState(false);
