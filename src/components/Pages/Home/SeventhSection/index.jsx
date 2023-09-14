@@ -29,7 +29,7 @@ const AccordionSection = () => {
         <AccordionItem
           key="3"
           aria-label="Accordion 3"
-          title="Do we work internationally?"
+          title="Do I work internationally?"
         >
           {Content_3}
         </AccordionItem>
