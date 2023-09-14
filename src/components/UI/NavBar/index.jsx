@@ -25,7 +25,13 @@ const NavBar = () => {
     <Fragment>
       <nav className="mx-8 flex items-center justify-between py-2 pt-4">
         <NavbarLogo />
-        <div>
+        <div className="z-0 flex gap-8">
+          <a
+            href="#myWork"
+            className="hidden text-lg font-bold transition-transform hover:scale-105 md-768:block"
+          >
+            My Work
+          </a>
           <DarkModeToggle />
         </div>
       </nav>

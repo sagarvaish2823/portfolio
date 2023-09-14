@@ -18,6 +18,5 @@ export async function POST(req, res) {
 export async function GET(req, res) {
   await db.connect();
   const body = await User.find();
-  // await db.disconnect();
   return new NextResponse(body);
 }

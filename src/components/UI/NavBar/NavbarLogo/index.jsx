@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function NavbarLogo() {
   return (
-    <Link href="/" className="text-3xl">
+    <Link href="/" className="text-2xl md-768:text-3xl">
       <m.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

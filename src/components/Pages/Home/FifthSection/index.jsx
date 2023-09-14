@@ -10,7 +10,7 @@ const ProjectWork = () => {
       year: 2021,
       link: "https://codingoven.com/",
       name: "Coding Oven",
-      para: "A web design agency website made with wordpress and divi.",
+      para: "A web design agency website made with Wordpress and Divi.",
       img: CodingOvenSs,
       alt: "codingoven-screenshot",
     },
@@ -19,13 +19,13 @@ const ProjectWork = () => {
       year: 2022,
       link: "https://trrinket.vercel.app/",
       name: "Trrinket",
-      para: "An e-commerce website with dashboard for product updation. Products can be added and removed with price and available stock.",
+      para: "An E-commerce website with dashboard for product updation. Products can be added and removed with price and available stock.",
       img: TrrinketSs,
       alt: "trrinket-screenshot",
     },
   ];
   return (
-    <section className="mx-8 pb-16 pt-8 lg-1024:mt-16">
+    <section id="myWork" className="mx-8 pb-16 pt-8 lg-1024:mt-16">
       <div>
         <h2 className="text-4xl font-bold tracking-tight lg-1024:pl-16 lg-1024:text-5xl">
           My Work
@@ -36,9 +36,9 @@ const ProjectWork = () => {
         <div className="pl-8">
           {data.map((i) => (
             <section key={i.id}>
-              <p className="pt-4 text-4xl text-gray-600 dark:text-gray-300 lg-1024:pt-8 lg-1024:text-6xl">
+              {/* <p className="pt-4 text-4xl text-gray-600 dark:text-gray-300 lg-1024:pt-8 lg-1024:text-6xl">
                 {i.year}
-              </p>
+              </p> */}
               <h2 className="pt-8 lg-1024:pt-16">
                 <a
                   href={i.link}
