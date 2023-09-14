@@ -5,11 +5,6 @@ import Image from "next/image";
 import AuditInput from "@/components/Funtional/AuditInput";
 import ConfettiScreen from "@/components/UI/Confetti";
 
-export const metadata = {
-  title: "websitesbysagar - Sagar Vaish",
-  description: "This is Sagar's portfolio website.",
-};
-
 export default function AuditPage() {
   // const [confetti, setConfetti] = useState(false);
   // function stopconfetti() {
