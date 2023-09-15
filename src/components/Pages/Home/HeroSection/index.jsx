@@ -16,7 +16,7 @@ const HeroSection = () => {
           <Button
             radius="full"
             className="button_main"
-            aria-label="lets make your website page"
+            aria-label="Lets Make Your Website"
             role="button"
           >
             <Link href={"/lets-make-your-website"}>
@@ -26,7 +26,7 @@ const HeroSection = () => {
           <Button
             radius="full"
             className="button_main bg-transparent"
-            aria-label="your free audit page"
+            aria-label="Your Free Website Audit"
             role="button"
           >
             <Link href={"/audit-page"}>Your Free Website Audit</Link>
