@@ -8,16 +8,19 @@ const Footer = () => {
       id: 0,
       icon: <BsGithub />,
       href: "https://github.com/sagarvaish2823",
+      altText: "Github-link",
     },
     {
       id: 1,
       icon: <BsLinkedin />,
       href: "https://www.linkedin.com/in/sagar-vaish-web-developer/",
+      altText: "Linkedin-link",
     },
     {
       id: 2,
       icon: <BsInstagram />,
       href: "https://www.instagram.com/websitesbysagar/",
+      altText: "Instagram-link",
     },
   ];
   return (
@@ -36,6 +39,7 @@ const Footer = () => {
             href={item.href}
             className="transition-transform hover:scale-110"
             target="_blank"
+            aria-label={item.altText}
           >
             {item.icon}
           </Link>

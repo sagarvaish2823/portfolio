@@ -11,7 +11,12 @@ const Message = () => {
         </h2>
       </div>
       <div className="flex items-center justify-center pt-12">
-        <Button radius="full" className="button_main bg-transparent">
+        <Button
+          radius="full"
+          className="button_main bg-transparent"
+          aria-label="link for lets make your website page"
+          role="button"
+        >
           <Link href={"/lets-make-your-website"}>
             Let&apos;s Make Your Website
           </Link>

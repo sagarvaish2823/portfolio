@@ -7,10 +7,6 @@ import { Switch } from "@nextui-org/switch";
 const DarkModeToggle = () => {
   const { toggle } = useContext(ThemeContext);
   return (
-    // <div className="cursor-pointer">
-    //   <button onClick={toggle}>{mode === "dark" ? Sun : Moon}</button>
-    // </div>
-
     <Switch
       defaultSelected
       onClick={toggle}

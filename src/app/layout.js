@@ -4,14 +4,11 @@ import { Roboto } from "next/font/google";
 import NavBar from "@/components/UI/NavBar";
 import { ThemeProvider } from "@/context/themeContext/themeContext";
 import MouseComponent from "@/components/UI/MouseComponent";
-import MetaDataCustom from "@/components/Funtional/MetaDataCustom";
 import Footer from "@/components/UI/Footer";
 import { Providers } from "../components/Providers/Providers";
 
 const fontUsed = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
-  // weight: ["300", "400", "500", "600", "700"], Quicksand
-  // weight: ["400"], Gloock
   subsets: ["latin"],
 });
 
@@ -30,7 +27,6 @@ export default function RootLayout({ children }) {
         >
           <Providers>
             <ThemeProvider>
-              <MetaDataCustom />
               <MouseComponent />
               <div className="relative">
                 <NavBar />

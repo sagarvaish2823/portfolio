@@ -1,22 +1,12 @@
-"use client";
-import React, { useState } from "react";
-import formImg from "../../public/svg/form.svg";
-import Image from "next/image";
-import AuditInput from "@/components/Funtional/AuditInput";
-import ConfettiScreen from "@/components/UI/Confetti";
+import React from "react";
+
+export const metadata = {
+  title: "Free Website Audit",
+  description: "Form for the sending the request for website audit",
+};
 
 export default function AuditPage() {
-  // const [confetti, setConfetti] = useState(false);
-  // function stopconfetti() {
-  //   setConfetti(false);
-  // }
-
-  // function makeWebiste() {
-  //   setTimeout(stopconfetti, 5000);
-  //   setConfetti(true);
-  // }
   return (
-    // {confetti && <ConfettiScreen />}
     <div className="mx-8 h-full w-[95vw] pt-16">
       <section className="flex justify-end">
         <h2 className="text-right text-5xl font-bold">

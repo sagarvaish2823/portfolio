@@ -15,7 +15,7 @@ const AccordionSection = () => {
   };
 
   return (
-    <section className="mx-8 pt-16 text-2xl lg-1024:mx-28">
+    <section className="mx-8 pt-16 lg-1024:mx-28">
       <Accordion>
         <AccordionItem
           key="1"
