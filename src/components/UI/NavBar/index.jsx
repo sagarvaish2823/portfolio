@@ -15,7 +15,7 @@ export default function NavBar() {
       maxWidth="full"
       shouldHideOnScroll
       className="bg-transparent"
-      isBlurred="false"
+      isBlurred="true"
     >
       <NavbarBrand>
         <NavbarLogo />

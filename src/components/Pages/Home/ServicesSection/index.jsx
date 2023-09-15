@@ -42,6 +42,8 @@ const ServicesSection = () => {
             )}
             <button
               onClick={() => setFlip1(!flip1)}
+              aria-label="open the card 1"
+              role="button"
               className="absolute bottom-4 right-4 z-20 text-5xl transition-transform hover:scale-90"
             >
               <BsArrowUpRightCircleFill />
@@ -73,6 +75,8 @@ const ServicesSection = () => {
             )}
             <button
               onClick={() => setFlip2(!flip2)}
+              aria-label="open the card 2"
+              role="button"
               className="absolute bottom-4 right-4 z-20 text-5xl transition-transform hover:scale-90"
             >
               <BsArrowUpRightCircleFill />

@@ -14,7 +14,7 @@ const Message = () => {
         <Button
           radius="full"
           className="button_main bg-transparent"
-          aria-label="link for lets make your website page"
+          aria-label="lets make your website page message"
           role="button"
         >
           <Link href={"/lets-make-your-website"}>

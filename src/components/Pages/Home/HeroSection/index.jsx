@@ -8,7 +8,7 @@ import { Button } from "@nextui-org/button";
 const HeroSection = () => {
   return (
     <main className="h-screen lg-1024:mx-8">
-      <section className="grid h-[72.6vh] grid-rows-2 gap-8 lg-1024:h-[82.6vh]">
+      <section className="grid h-[71.6vh] grid-rows-2 gap-8 lg-1024:h-[82.6vh]">
         <h2 className="flex items-end justify-center text-4xl text-black drop-shadow-md dark:text-white md-768:text-6xl lg-1024:text-5xl">
           webistesbysagar
         </h2>
@@ -16,7 +16,7 @@ const HeroSection = () => {
           <Button
             radius="full"
             className="button_main"
-            aria-label="link for lets make your website page"
+            aria-label="lets make your website page"
             role="button"
           >
             <Link href={"/lets-make-your-website"}>
@@ -26,7 +26,7 @@ const HeroSection = () => {
           <Button
             radius="full"
             className="button_main bg-transparent"
-            aria-label="link for free audit page"
+            aria-label="your free audit page"
             role="button"
           >
             <Link href={"/audit-page"}>Your Free Website Audit</Link>
