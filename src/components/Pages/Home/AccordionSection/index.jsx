@@ -5,12 +5,17 @@ const AccordionSection = () => {
   const Content_1 =
     "I usually take from 2 weeks to 2 month based on the type of project.";
   const Content_2 =
-    "No, you need not have a domain and hosting before contacting us. I will assist give full assistance about us.";
+    "You do not need to have a domain and hosting before contacting me.";
   const Content_3 =
     "Yes, I am based in India and I take projects from around the globe.";
 
+  const itemClasses = {
+    title: "font-normal text-xl",
+    content: "text-small px-2",
+  };
+
   return (
-    <section className="mx-8 pt-16 lg-1024:mx-28">
+    <section className="mx-8 pt-16 text-2xl lg-1024:mx-28">
       <Accordion>
         <AccordionItem
           key="1"

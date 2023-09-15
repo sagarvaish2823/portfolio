@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import HindiBackGround from "@/components/UI/HindiBackGround";
-import myImg from "../../../../public/images/sagar.webp";
+import myImg from "@/public/images/sagar.webp";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 

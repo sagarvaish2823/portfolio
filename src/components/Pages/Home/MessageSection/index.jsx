@@ -1,3 +1,4 @@
+import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import React from "react";
 
@@ -10,9 +11,11 @@ const Message = () => {
         </h2>
       </div>
       <div className="flex items-center justify-center pt-12">
-        <Link href={"/"} className="button_main hover:shadow-md">
-          Let&apos;s Make Your Website
-        </Link>
+        <Button radius="full" className="button_main bg-transparent">
+          <Link href={"/lets-make-your-website"}>
+            Let&apos;s Make Your Website
+          </Link>
+        </Button>
       </div>
     </section>
   );

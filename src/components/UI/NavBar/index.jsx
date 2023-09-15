@@ -1,42 +1,33 @@
-import React, { Fragment } from "react";
+import React from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+} from "@nextui-org/navbar";
 import NavbarLogo from "./NavbarLogo";
 import DarkModeToggle from "../DarkModeToggle";
 import Link from "next/link";
 
-const NavBar = () => {
-  const links = [
-    {
-      id: 1,
-      name: "Home",
-      href: "/",
-    },
-    {
-      id: 2,
-      name: "About Me",
-      href: "/about-me",
-    },
-    {
-      id: 3,
-      name: "Newsletter",
-      href: "/newsletter",
-    },
-  ];
+export default function NavBar() {
   return (
-    <Fragment>
-      <nav className="mx-8 flex items-center justify-between py-2 pt-4">
+    <Navbar
+      maxWidth="full"
+      shouldHideOnScroll
+      className="bg-transparent"
+      isBlurred="false"
+    >
+      <NavbarBrand>
         <NavbarLogo />
-        <div className="z-0 flex gap-8">
-          <Link
-            href="/#myWork"
-            className="hidden text-lg font-bold transition-transform hover:scale-105 md-768:block"
-          >
-            My Work
-          </Link>
+      </NavbarBrand>
+      <NavbarContent justify="end" className="z-0">
+        <NavbarItem>
+          <Link href="/#myWork">My Work</Link>
+        </NavbarItem>
+        <NavbarItem>
           <DarkModeToggle />
-        </div>
-      </nav>
-    </Fragment>
+        </NavbarItem>
+      </NavbarContent>
+    </Navbar>
   );
-};
-
-export default NavBar;
+}

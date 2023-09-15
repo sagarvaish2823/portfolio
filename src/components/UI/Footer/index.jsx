@@ -12,12 +12,12 @@ const Footer = () => {
     {
       id: 1,
       icon: <BsLinkedin />,
-      href: "https://github.com/sagarvaish2823",
+      href: "https://www.linkedin.com/in/sagar-vaish-web-developer/",
     },
     {
       id: 2,
       icon: <BsInstagram />,
-      href: "https://github.com/sagarvaish2823",
+      href: "https://www.instagram.com/websitesbysagar/",
     },
   ];
   return (
@@ -35,6 +35,7 @@ const Footer = () => {
             key={item.id}
             href={item.href}
             className="transition-transform hover:scale-110"
+            target="_blank"
           >
             {item.icon}
           </Link>
