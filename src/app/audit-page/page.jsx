@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Free Website Audit",
+  title: "Free Website Audit | websitesbysagar",
   description: "Form for the sending the request for website audit",
 };
 

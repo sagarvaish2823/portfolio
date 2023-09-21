@@ -9,11 +9,6 @@ const AccordionSection = () => {
   const Content_3 =
     "Yes, I am based in India and I take projects from around the globe.";
 
-  const itemClasses = {
-    title: "font-normal text-xl",
-    content: "text-small px-2",
-  };
-
   return (
     <section className="mx-8 pt-16 lg-1024:mx-28">
       <Accordion>

@@ -5,15 +5,15 @@ import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 import { Switch } from "@nextui-org/switch";
 
 const DarkModeToggle = () => {
-  const { toggle } = useContext(ThemeContext);
+  const { toggle, mode } = useContext(ThemeContext);
   return (
     <Switch
       defaultSelected
       onClick={toggle}
       size="lg"
       color="secondary"
-      thumbIcon={({ isSelected, className }) =>
-        isSelected ? (
+      thumbIcon={({ className }) =>
+        mode === "dark" ? (
           <BsMoonFill className={className} />
         ) : (
           <BsFillSunFill className={className} />

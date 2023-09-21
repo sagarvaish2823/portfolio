@@ -12,11 +12,9 @@
 .theme {
   transition: 1s all ease;
 }
-
 body {
   overflow-x: hidden;
 }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -26,30 +24,35 @@ body {
 body {
   font-size: 16px;
 }
-
 li {
   text-decoration: none;
   list-style-type: none;
 }
-
 img {
   width: 100%;
 }
-.tooltip {
-  position: absolute;
-  top: calc(-100% -50px);
-  translate: -45% -200%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px;
-  border-radius: 1rem;
-  z-index: 20;
-  min-width: 20rem;
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 0px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 @layer utilities {
   .input_form {
-    @apply w-[10rem] border-b bg-transparent p-2 text-lg text-yellow-400 placeholder-gray-300 focus:outline-none focus-visible:bg-yellow-100 md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl;
+    @apply w-[20rem] rounded-xl border-2 border-gray-600 bg-transparent placeholder-gray-300 focus:outline-none focus-visible:bg-transparent lg-1024:w-[17rem];
+    /* @apply w-[10rem] border-b bg-transparent p-2 text-lg placeholder-gray-300 focus:outline-none focus-visible:bg-transparent md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl; */
   }
   .button_main {
     @apply rounded-full border-2 border-black px-6 py-2 text-center text-base transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold hover:shadow-md dark:border-white dark:hover:text-black md-768:text-xl;
