@@ -13,8 +13,8 @@ const WorkFlow = () => {
       ),
       para: (
         <p className="text-base font-normal">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          atque odit facilis cumque! Cumque, suscipit.
+          By filling the form your can share the details of your website with
+          me.
         </p>
       ),
     },
@@ -28,8 +28,8 @@ const WorkFlow = () => {
       ),
       para: (
         <p className="text-base font-normal">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          atque odit facilis cumque! Cumque, suscipit.
+          I will contact you and we will discuss all the things about your
+          website.
         </p>
       ),
     },
@@ -43,8 +43,8 @@ const WorkFlow = () => {
       ),
       para: (
         <p className="text-base font-normal">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          atque odit facilis cumque! Cumque, suscipit.
+          I will create a demo of your website and on basis of that I will
+          develop your website
         </p>
       ),
     },
@@ -58,8 +58,8 @@ const WorkFlow = () => {
       ),
       para: (
         <p className="text-base font-normal">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          atque odit facilis cumque! Cumque, suscipit.
+          After all the test and changes, your website will be ready for the
+          launch
         </p>
       ),
     },
