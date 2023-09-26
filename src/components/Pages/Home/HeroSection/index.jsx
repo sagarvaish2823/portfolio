@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <main className="h-screen lg-1024:mx-8">
       <section className="grid h-[71.6vh] grid-rows-2 gap-8 lg-1024:h-[82.6vh]">
-        <h2 className="flex items-end justify-center text-4xl text-black drop-shadow-md dark:text-white md-768:text-6xl lg-1024:text-5xl">
+        <h2 className="flex items-end justify-center text-4xl drop-shadow-md md-768:text-6xl lg-1024:text-5xl">
           webistesbysagar
         </h2>
         <div className="mx-8 flex h-fit flex-wrap items-start justify-center gap-8">
@@ -23,22 +23,22 @@ const HeroSection = () => {
               Let&apos;s Make Your Website
             </Link>
           </Button>
-          <Button
+          {/* <Button
             radius="full"
             className="button_main bg-transparent"
             aria-label="Your Free Website Audit"
             role="button"
           >
             <Link href={"/audit-page"}>Your Free Website Audit</Link>
-          </Button>
+          </Button> */}
         </div>
       </section>
       <section className="flex flex-col items-center justify-center">
         <Tooltip showArrow={true} content="Scroll Down">
-          <Button className="bg-transparent" aria-label="icon" role="button">
+          <div>
             <BsMouse className="hidden text-4xl lg-1024:block" />
             <MdSwipeUp className="text-4xl lg-1024:hidden" />
-          </Button>
+          </div>
         </Tooltip>
       </section>
     </main>

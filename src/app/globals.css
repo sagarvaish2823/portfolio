@@ -51,7 +51,7 @@ input[type="number"] {
 
 @layer utilities {
   .input_form {
-    @apply w-[20rem] rounded-xl border-2 border-gray-600 bg-transparent placeholder-gray-300 focus:outline-none focus-visible:bg-transparent lg-1024:w-[17rem];
+    @apply w-[20rem] rounded-xl border-2 border-gray-600 bg-transparent placeholder-gray-300 focus:outline-none focus-visible:bg-transparent md-768:w-[17rem] lg-1024:w-[25rem];
     /* @apply w-[10rem] border-b bg-transparent p-2 text-lg placeholder-gray-300 focus:outline-none focus-visible:bg-transparent md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl; */
   }
   .button_main {

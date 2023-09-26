@@ -1,8 +1,6 @@
 import FormInput from "@/components/Funtional/FormInput";
 import ContactDetails from "@/components/Pages/letsMakeYourWebsite/ContactDetails";
-import { Tooltip } from "@nextui-org/tooltip";
 import React from "react";
-import { MdOutlineAlternateEmail } from "react-icons/md";
 
 export const metadata = {
   title: "Let's make your website | websitesbysagar",
@@ -11,9 +9,9 @@ export const metadata = {
 
 const MakeWebsite = () => {
   return (
-    <section className="pt-8">
+    <section className="pb-16 pt-8">
       <div className="mx-8">
-        <h1 className="text-right text-5xl font-bold">
+        <h1 className="text-right text-3xl font-bold md-768:text-4xl lg-1366:text-5xl">
           Let&apos;s Talk
           <br />
           <span className="text-yellow-400">About Website</span>
