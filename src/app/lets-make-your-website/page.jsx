@@ -11,7 +11,7 @@ const MakeWebsite = () => {
   return (
     <section className="pb-16 pt-8">
       <div className="mx-8">
-        <h1 className="text-right text-3xl font-bold md-768:text-4xl lg-1366:text-5xl">
+        <h1 className="page_title">
           Let&apos;s Talk
           <br />
           <span className="text-yellow-400">About Website</span>

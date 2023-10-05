@@ -5,20 +5,21 @@ import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 
 const AboutSection = () => {
+  const para =
+    "text-center text-2xl text-black drop-shadow dark:text-gray-500 lg-1024:text-left lg-1024:text-3xl lg-1024:tracking-tight";
+
+  const para_span = "text-yellow-500 dark:text-white";
   return (
     <Fragment>
       <div className="mx-4 lg-1024:mx-[3rem]">
         <div className="grid-cols-3 place-items-center justify-items-center lg-1024:grid">
           <div>
-            <p className="text-center text-2xl text-black drop-shadow dark:text-gray-500 lg-1024:text-left lg-1024:text-3xl lg-1024:tracking-tight">
-              Hi, I&apos;m{" "}
-              <span className="text-yellow-500 dark:text-white">
-                Sagar Vaish
-              </span>
+            <p className={para}>
+              Hi, I&apos;m <span className={para_span}>Sagar Vaish</span>
               .
               <br />
               Based in{" "}
-              <span className="text-yellow-500 dark:text-white">
+              <span className={para_span}>
                 <Typewriter
                   words={["भारत", "India"]}
                   loop={0}
@@ -30,26 +31,19 @@ const AboutSection = () => {
                 />
               </span>
               <br />I help startups design{" "}
-              <span className="text-yellow-500 dark:text-white">simpler</span>{" "}
-              interfaces.
+              <span className={para_span}>simpler</span> interfaces.
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <div className="relative mb-16 md-768:h-[20rem] md-768:w-[20rem] lg-1024:mb-0 lg-1024:h-[21rem] lg-1024:w-[21rem]">
+            <div className="mb-16 md-768:h-[20rem] md-768:w-[20rem] lg-1024:mb-0 lg-1024:h-[21rem] lg-1024:w-[21rem]">
               <Image src={myImg} alt="my-pic" height={500} width={500} />
             </div>
           </div>
           <div>
-            <p className="text-center text-2xl text-black drop-shadow dark:text-gray-500 lg-1024:text-left lg-1024:text-3xl lg-1024:tracking-tight">
-              I{" "}
-              <span className="text-yellow-500 dark:text-white">
-                simplify & re-design
-              </span>{" "}
-              websites for smooth user experience and greater{" "}
-              <span className="text-yellow-500 dark:text-white">
-                interactivity
-              </span>
-              .
+            <p className={para}>
+              I <span className={para_span}>simplify & re-design</span> websites
+              for smooth user experience and greater{" "}
+              <span className={para_span}>interactivity</span>.
             </p>
           </div>
         </div>

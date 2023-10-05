@@ -8,10 +8,11 @@ const DarkModeToggle = () => {
   const { toggle, mode } = useContext(ThemeContext);
   return (
     <Switch
-      defaultSelected
+      isSelected={mode === "light" ? <BsFillSunFill /> : null}
       onClick={toggle}
       size="lg"
-      color="secondary"
+      color="primary"
+      aria-label="dark mode"
       thumbIcon={({ className }) =>
         mode === "dark" ? (
           <BsMoonFill className={className} />

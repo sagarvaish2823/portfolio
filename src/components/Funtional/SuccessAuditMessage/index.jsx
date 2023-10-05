@@ -3,9 +3,9 @@ import React from "react";
 
 const SuccessAuditMessage = (props) => {
   return (
-    <div className="absolute left-0 top-0 h-screen w-screen backdrop-blur-sm">
-      <div className="flex h-[120%] flex-col items-center justify-center rounded-lg bg-white shadow-2xl lg-1366:mx-20 lg-1366:mt-[7%] lg-1366:h-[70%]">
-        <p className="text-black">Thanks</p>
+    <div className="fixed left-0 top-0 z-50 h-screen w-screen backdrop-blur-sm">
+      <div className="flex h-[120%] flex-col items-center justify-center rounded-lg bg-white shadow-2xl dark:bg-black lg-1366:mx-20 lg-1366:mt-[7%] lg-1366:h-[70%]">
+        <p className="text-black dark:text-white">Thanks</p>
         <button
           type="button"
           onClick={props.onClickAgain}

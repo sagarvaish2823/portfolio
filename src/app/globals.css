@@ -50,12 +50,20 @@ input[type="number"] {
 }
 
 @layer utilities {
+  /* ------------------------------------------------------------------------------------------------ */
+
+  .page_title {
+    @apply text-right text-3xl font-bold md-768:text-4xl lg-1366:text-5xl;
+  }
+  .page_subHeading {
+    @apply text-4xl font-bold tracking-tight lg-1024:pl-16 lg-1024:text-5xl;
+  }
   .input_form {
     @apply w-[20rem] rounded-xl border-2 border-gray-600 bg-transparent placeholder-gray-300 focus:outline-none focus-visible:bg-transparent md-768:w-[17rem] lg-1024:w-[25rem];
     /* @apply w-[10rem] border-b bg-transparent p-2 text-lg placeholder-gray-300 focus:outline-none focus-visible:bg-transparent md-768:w-[15rem] md-768:text-2xl lg-1024:w-[17rem] lg-1024:text-3xl lg-1366:w-[20rem] lg-1366:p-4 lg-1366:text-2xl; */
   }
   .button_main {
-    @apply rounded-full border-2 border-black px-6 py-2 text-center text-base transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold hover:shadow-md dark:border-white dark:hover:text-black md-768:text-xl;
+    @apply rounded-full border-2 border-black text-center text-base transition-all hover:scale-105 hover:bg-yellow-400 hover:font-bold hover:shadow-md dark:border-white dark:hover:text-black md-768:text-xl;
   }
   .card {
     @apply relative flex aspect-square h-[18rem] w-[18rem] flex-col justify-between rounded-2xl bg-[#f3f3f3] px-10 pb-16 pt-16 font-bold text-black shadow dark:bg-white dark:text-black lg-1024:h-[19rem] lg-1024:w-[19rem];

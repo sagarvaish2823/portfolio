@@ -11,7 +11,7 @@ const ServicesSection = () => {
     <MotionConfig transition={{ duration: 0.5 }}>
       <section className="mx-8 pt-8 lg-1024:mt-16">
         <div>
-          <h2 className="text-4xl font-bold tracking-tight lg-1024:pl-16 lg-1024:text-5xl">
+          <h2 className="page_subHeading">
             I can <br /> help you in...
           </h2>
         </div>
@@ -21,7 +21,7 @@ const ServicesSection = () => {
               flip1
                 ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-fuchsia-700 dark:to-sky-800"
                 : ""
-            } relative w-full  rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617] `}
+            } relative w-full rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617]`}
           >
             {!flip1 ? (
               <div className="flex h-full items-center justify-center">
@@ -54,7 +54,7 @@ const ServicesSection = () => {
               flip2
                 ? "animate-gradient-xy bg-gradient-to-r from-rose-200 to-amber-300 dark:from-fuchsia-700 dark:to-sky-800"
                 : ""
-            } relative mt-8 w-full  rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617] md-768:mt-0`}
+            } relative mt-8 w-full rounded-2xl bg-[#f3f3f3] p-8 shadow dark:bg-[#161617] md-768:mt-0`}
           >
             {!flip2 ? (
               <div className="flex h-full items-center justify-center">

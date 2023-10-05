@@ -65,6 +65,7 @@ const FormInput = () => {
   return (
     <div className="flex items-center justify-start">
       {success}
+      <SuccessAuditMessage />
       <form onSubmit={formik.handleSubmit} className="flex flex-col">
         {/* name field */}
         <m.label

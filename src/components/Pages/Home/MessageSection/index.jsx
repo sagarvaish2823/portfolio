@@ -6,9 +6,7 @@ const Message = () => {
   return (
     <section className="mx-8 pb-8">
       <div>
-        <h2 className="text-left text-4xl font-bold tracking-tight lg-1024:pl-16 lg-1024:text-5xl">
-          Want to work with me?...
-        </h2>
+        <h2 className="page_subHeading">Want to work with me?...</h2>
       </div>
       <div className="flex items-center justify-center pt-12">
         <Button

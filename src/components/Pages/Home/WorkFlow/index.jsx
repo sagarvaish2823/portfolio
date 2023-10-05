@@ -13,7 +13,7 @@ const WorkFlow = () => {
       ),
       para: (
         <p className="text-base font-normal">
-          By filling the form your can share the details of your website with
+          By filling out the form you can share the details of your website with
           me.
         </p>
       ),
@@ -43,8 +43,8 @@ const WorkFlow = () => {
       ),
       para: (
         <p className="text-base font-normal">
-          I will create a demo of your website and on basis of that I will
-          develop your website
+          I will create a demo of your website and based on that I will develop
+          your website.
         </p>
       ),
     },
@@ -58,8 +58,8 @@ const WorkFlow = () => {
       ),
       para: (
         <p className="text-base font-normal">
-          After all the test and changes, your website will be ready for the
-          launch
+          After all the tests and changes, your website will be ready for the
+          launch.
         </p>
       ),
     },
@@ -78,13 +78,15 @@ const WorkFlow = () => {
     ["65%", "-230%"]
   );
 
+  const para =
+    "absolute -top-20 right-5 text-[7rem] text-black dark:text-gray-400";
   return (
     <Fragment>
       <section ref={targetRef} className="relative h-[300vh]">
         <div className="sticky top-0 overflow-hidden">
           <div>
             <div className="mx-8 pt-16">
-              <p className="text-right text-4xl font-bold tracking-tight lg-1024:text-5xl">
+              <p className="page_subHeading text-right">
                 Your Website
                 <br className="md-768:hidden" /> will be ready in <br /> 4 easy
                 steps...
@@ -98,9 +100,7 @@ const WorkFlow = () => {
                 <div key={text.id} className="card">
                   <div className="flex items-end justify-between">
                     {text.title}
-                    <p className="absolute -top-20 right-5 text-[7rem] text-black dark:text-gray-400">
-                      {text.id}
-                    </p>
+                    <p className={para}>{text.id}</p>
                   </div>
                   {text.para}
                 </div>
@@ -114,9 +114,7 @@ const WorkFlow = () => {
                 <div key={text.id} className="card">
                   <div className="flex items-end justify-between">
                     {text.title}
-                    <p className="absolute -top-20 right-5 text-[7rem] text-black dark:text-gray-400">
-                      {text.id}
-                    </p>
+                    <p className={para}>{text.id}</p>
                   </div>
                   {text.para}
                 </div>
