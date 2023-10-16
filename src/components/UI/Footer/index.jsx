@@ -45,6 +45,15 @@ const Footer = () => {
           </Link>
         ))}
       </div>
+      <div className="flex gap-4 pt-8">
+        <div>
+          <Link href={"/acknowledgement"}>Acknowledgement</Link>
+        </div>
+        |
+        <div>
+          <Link href={"/terms"}>Terms & Conditions</Link>
+        </div>
+      </div>
     </section>
   );
 };
